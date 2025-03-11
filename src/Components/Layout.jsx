@@ -1,3 +1,5 @@
+import "../assets/styles/layout.scss";
+
 export default function Layout() {
   return (
     <header>
