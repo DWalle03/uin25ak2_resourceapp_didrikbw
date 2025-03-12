@@ -1,0 +1,26 @@
+:root {
+  --darkblue: #2a324b;
+  --lightblue: #58699d;
+  --grey: #e1e5ee;
+  --white: #fff;
+}
+
+main {
+  width: 900px;
+  height: 150px;
+  background-color: var(--white);
+  padding: 80px;
+
+  h3 {
+    color: var(--lightblue);
+  }
+}
+.navButtons {
+  margin: 0 10px;
+  padding: 20px 64.3px;
+  cursor: pointer;
+  background-color: var(--darkblue);
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+}

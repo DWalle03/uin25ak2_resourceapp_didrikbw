@@ -1,27 +1,16 @@
 import "../assets/styles/layout.scss";
+import "../assets/styles/resources.scss";
+import "../assets/styles/nav.scss";
+import Nav from "./Nav";
+import Resources from "./Resources";
 
 export default function Layout() {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <button id="HTML">HTML</button>
-          </li>
-          <li>
-            <button id="CSS">CSS</button>
-          </li>
-          <li>
-            <button id="JavaScript">Javascript</button>
-          </li>
-          <li>
-            <button id="React">React</button>
-          </li>
-          <li>
-            <button id="Sanity">Sanity and headless CMS</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <>
+      <Nav />
+      <main>
+        <Resources />
+      </main>
+    </>
   );
 }
