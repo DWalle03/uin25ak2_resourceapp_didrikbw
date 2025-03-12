@@ -6,19 +6,19 @@ export default function Nav() {
   return (
     <header>
       <nav>
-        <Link to="HTML" className="navButtons">
+        <Link to="html" className="navButtons">
           HTML
         </Link>
-        <Link to="CSS" className="navButtons">
+        <Link to="css" className="navButtons">
           CSS
         </Link>
-        <Link to="Javascript" className="navButtons">
+        <Link to="javascript" className="navButtons">
           Javascript
         </Link>
-        <Link to="React" className="navButtons">
+        <Link to="react" className="navButtons">
           React
         </Link>
-        <Link to="Sanity" className="navButtons">
+        <Link to="sanity" className="navButtons">
           Sanity and headless CMS
         </Link>
       </nav>
