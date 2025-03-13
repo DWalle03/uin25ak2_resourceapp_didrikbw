@@ -1,16 +1,12 @@
 import "../assets/styles/layout.scss";
-import "../assets/styles/resources.scss";
-import "../assets/styles/nav.scss";
 import Nav from "./Nav";
-import Resources from "./Resources";
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <>
       <Nav />
-      <main>
-        <Resources />
-      </main>
+      {/* Refererer til Nav komponentet som viser ressursene ifra ressurser.js fila */}
+      <main>{children}</main>
     </>
   );
 }
