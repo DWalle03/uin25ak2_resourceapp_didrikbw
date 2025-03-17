@@ -1,14 +1,12 @@
 import "./App.css";
 import Layout from "./Components/Layout";
-import Resources from "./Components/Resources";
-import Pagetitle from "./Components/PageTitle";
 import PageTitle from "./Components/PageTitle";
+import Resources from "./Components/Resources";
 import { Routes, Route, Navigate } from "react-router";
 
 function App() {
   return (
     <>
-      <Pagetitle /> {/* Komponent som viser PageTitle */}
       <Layout>
         {/* Layout komponent som wrapper rutene */}
         <Routes>
@@ -17,7 +15,7 @@ function App() {
             element={
               <>
                 <Resources /> {/* Komponent som viser Resources */}
-                <Navigate to="/html" />
+                <Navigate to="/HTML" />
                 {/* Sporer tilbake til "/html" altså "Home" */}
               </>
             }
@@ -26,7 +24,8 @@ function App() {
             path=":category"
             element={
               <>
-                <Resources /> <PageTitle />
+                <Resources /> <PageTitle />{" "}
+                {/* Komponent som viser PageTitle */}
               </>
             }
           />
